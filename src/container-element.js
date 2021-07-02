@@ -14,11 +14,11 @@ customElements.define(
     }
 
     setConfig(config) {
-      if (!Array.isArray(config.elements)) {
-        throw new Error("Elements are required.");
-      }
-
       this._config = config;
+
+      if (!Array.isArray(config.elements)) {
+        this._config.elements = [];
+      }
 
       this.updateContainerStyle();
 

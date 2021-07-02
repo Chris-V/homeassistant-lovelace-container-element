@@ -11,7 +11,7 @@ export default [
   {
     input: 'src/container-element.js',
     output: {
-      dir: 'dist',
+      dir: '.',
       format: 'es',
     },
     plugins: [
